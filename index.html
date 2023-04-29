@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  
+</head>
+<body>
+  
+  <div class="container">
+    <h1 id="heading">Tic Tac Toe</h1>
+    <br>
+    <h3 id="gamestarted" class="text-white"></h3>
+    <table id="tic">
+      <tr id="firstRow">
+        <td><button onclick="func0(this)" disabled type="button" class="btn" id="zeroth" style="border-left: 0vh;"></button></td>
+        <td><button onclick="func1(this)" disabled type="button" class="btn" id="first"></button></td>
+        <td><button onclick="func2(this)" disabled type="button" class="btn" id="second" style="border-right: 0vh;"></button></td>
+      </tr>
+      <tr>
+        <td><button onclick="func3(this)" disabled type="button" class="btn" id="third" style="border-left: 0vh;"></button></td>
+        <td><button onclick="func4(this)" disabled type="button" class="btn" id="fourth"></button></td>
+        <td><button onclick="func5(this)" disabled type="button" class="btn" id="fifth" style="border-right: 0vh;"></button></td>
+      </tr>
+      <tr id="lastRow">
+        <td><button onclick="func6(this)" disabled type="button" class="btn" id="sixth" style="border-left: 0vh;"></button></td>
+        <td><button onclick="func7(this)" disabled type="button" class="btn" id="seventh"></button></td>
+        <td><button onclick="func8(this)" disabled type="button" class="btn" id="eigth" style="border-right: 0vh;"></button></td>
+      </tr>
+    </table>
+
+    <button id="start" onclick="startgame()" type="button">Click to start</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+          integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+          crossorigin="anonymous"></script>
+  <script src="JS/logic.js"></script>
+</body>
+</html>
